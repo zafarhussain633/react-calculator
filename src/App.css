@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --primarycolor: wheat;
+    --secondarycolor: #343a40; 
+    --textcolor:rgba(255, 255, 255, 0.774);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color:var(--primarycolor);
+    font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+#container{
+    height: 500px;
+    margin: 2rem auto auto auto;
+    width: 30%;
+    overflow: hidden;
+    background-color: var(--secondarycolor);
+}
+#output-area{
+    border-radius: 2%;
+    color: var(--textcolor);
+    font-weight: 400;
+    font-size: 2rem;
+    background-color:var(--primarycolor);
+
+}
+button{
+   background-color: var(--secondarycolor);
+   margin-left: 2px;
+   margin-right: 2px;
+   padding: 1rem 1.5rem 1rem 1.5rem;
+   border-radius: 20%;
+   color: var(--textcolor);
+   font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.padding-0{
+    padding:0;
 }
 
-.App-link {
-  color: #61dafb;
+.Clear_btn{
+    color: var(--textcolor);
+    background-color: var(--secondarycolor);
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    color: var(--textcolor);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.equal_btn{
+    color:  var(--textcolor);
+    background-color: var(--secondarycolor);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: bolder;
+    color: var(--textcolor);
+    
 }
+
+footer{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: var(--textcolor);
+}
+
+
+
+/*FOR DARK MODE*/
+
+
+
+
+
+
+/* for responsivness */
+@media(min-width:250px) and (max-width:500px){     
+    #container{
+        width: 90%;
+    }
+}
+
+@media(min-width:500px) and (max-width:768px){
+    #container{
+        width: 70%;
+    }
+}
+
+@media (min-width:768px) and (max-width:990Px) {
+    #container{
+        width: 50%;
+    }
+ }
+
+ @media (min-width:990px) and (max-width:1200px) {
+    #container{
+        width: 40%;
+    }
+ }
